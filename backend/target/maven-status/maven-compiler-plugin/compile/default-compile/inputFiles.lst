@@ -1,0 +1,15 @@
+/Users/hoangviet/Documents/Techzen/chatBot/backend/src/main/java/com/example/backend/repository/ChatSummaryRepository.java
+/Users/hoangviet/Documents/Techzen/chatBot/backend/src/main/java/com/example/backend/service/ChatService.java
+/Users/hoangviet/Documents/Techzen/chatBot/backend/src/main/java/com/example/backend/config/AppConfig.java
+/Users/hoangviet/Documents/Techzen/chatBot/backend/src/main/java/com/example/backend/entity/Contact.java
+/Users/hoangviet/Documents/Techzen/chatBot/backend/src/main/java/com/example/backend/BackendApplication.java
+/Users/hoangviet/Documents/Techzen/chatBot/backend/src/main/java/com/example/backend/controller/ChatController.java
+/Users/hoangviet/Documents/Techzen/chatBot/backend/src/main/java/com/example/backend/dto/SummaryResponse.java
+/Users/hoangviet/Documents/Techzen/chatBot/backend/src/main/java/com/example/backend/repository/MessageRepository.java
+/Users/hoangviet/Documents/Techzen/chatBot/backend/src/main/java/com/example/backend/service/GeminiService.java
+/Users/hoangviet/Documents/Techzen/chatBot/backend/src/main/java/com/example/backend/config/WebSocketConfig.java
+/Users/hoangviet/Documents/Techzen/chatBot/backend/src/main/java/com/example/backend/service/MessengerCrawlerService.java
+/Users/hoangviet/Documents/Techzen/chatBot/backend/src/main/java/com/example/backend/repository/ContactRepository.java
+/Users/hoangviet/Documents/Techzen/chatBot/backend/src/main/java/com/example/backend/dto/MessageResponse.java
+/Users/hoangviet/Documents/Techzen/chatBot/backend/src/main/java/com/example/backend/entity/Message.java
+/Users/hoangviet/Documents/Techzen/chatBot/backend/src/main/java/com/example/backend/entity/ChatSummary.java
