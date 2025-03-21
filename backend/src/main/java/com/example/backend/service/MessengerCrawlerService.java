@@ -100,6 +100,7 @@ public class MessengerCrawlerService {
                 LocalDateTime messageTime = parseMessageTime(timestamp);
                 
                 chatService.processNewMessage(senderName, messageContent, messageTime);
+                page.locator("(//div[@class='html-div xexx8yu x4uap5 x18d9i69 xkhd6sd x1gslohp x11i5rnm x12nagc x1mh8g0r x1yc453h x126k92a x18lvrbx'])[last()]").click();
             }
 
         } catch (Exception e) {
@@ -172,27 +173,27 @@ public class MessengerCrawlerService {
         }
     }
 
-    private volatile boolean isCheckingNewMessages = true; // Biến để theo dõi lượt kiểm tra
+    // private volatile boolean isCheckingNewMessages = true; // Biến để theo dõi lượt kiểm tra
 
     public void startWatching() {
         Thread watchThread = new Thread(() -> {
             while (!Thread.currentThread().isInterrupted()) {
                 try {
-                    if (isCheckingNewMessages) {
-                        // Kiểm tra tin nhắn thường
-                        log.info("Đang kiểm tra tin nhắn thường...");
+                    // if (isCheckingNewMessages) {
+                    //     // Kiểm tra tin nhắn thường
+                    //     log.info("Đang kiểm tra tin nhắn thường...");
                         watchForNewMessages();
-                    } else {
-                        // Kiểm tra tin nhắn chờ
-                        log.info("Đang kiểm tra tin nhắn chờ...");
-                        checkPendingMessages();
-                    }
+                    // } else {
+                    //     // Kiểm tra tin nhắn chờ
+                    //     log.info("Đang kiểm tra tin nhắn chờ...");
+                    //     checkPendingMessages();
+                    // }
                     
-                    // Đảo trạng thái cho lần kiểm tra tiếp theo
-                    isCheckingNewMessages = !isCheckingNewMessages;
+                    // // Đảo trạng thái cho lần kiểm tra tiếp theo
+                    // isCheckingNewMessages = !isCheckingNewMessages;
                     
                     // Đợi 30 giây trước khi kiểm tra tiếp
-                    Thread.sleep(30000);
+                    Thread.sleep(10);
                     
                 } catch (InterruptedException e) {
                     Thread.currentThread().interrupt();
@@ -224,7 +225,7 @@ public class MessengerCrawlerService {
         watchThread.setName("MessageWatcherThread");
         watchThread.start();
         
-        log.info("Bắt đầu theo dõi tin nhắn (chế độ luân phiên)");
+        log.info("Bắt đầu theo dõi tin nhắn ");
     }
 
     public void checkPendingMessages() {
